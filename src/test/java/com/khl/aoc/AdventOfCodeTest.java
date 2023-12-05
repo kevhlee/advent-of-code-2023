@@ -17,6 +17,11 @@ public class AdventOfCodeTest {
         testSolution("55386", "54824", Day01::new);
     }
 
+    @Test
+    public void testDay02() throws Exception {
+        testSolution("2085", "79315", Day02::new);
+    }
+
     private void testSolution(String expected1, String expected2, Supplier<Solution> supplier) throws Exception {
         var solution = supplier.get();
         var testInput = getTestInput(solution.getDay());
